@@ -23,7 +23,7 @@ def register():
 def confirm_information(name, username, phone, email, password):
     print(
           "Are you sure about your information?\n"
-          + "name:" + " " + name
+          + "name:" + " " + name.upper()
           + "\nusername:" + " " + username
           + "\nphone number:" + " " + phone
           + "\nEmail:" + " " + email
@@ -42,3 +42,4 @@ def success(name, username, phone, email, password):
           + "\n Password:" + " " + password
           )
     login.login_area(name, username, phone, email, password)
+    return password
